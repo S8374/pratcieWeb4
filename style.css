@@ -1,0 +1,311 @@
+
+body{
+    color: #666666;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+    
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header_area{
+    width: 100%; 
+    clear: both;
+    position: fixed ;
+    z-index: 1;
+}
+
+#main_menu{
+    width: 100%;
+    height: 4rem;
+    clear: both;
+    background-color: rgb(28, 41, 52);
+}
+
+#main_menu ul{
+ 
+    padding: 14px ;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+#main_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+#main_menu ul li a:hover{
+    color: black;
+}
+#main_menu ul li:hover a{
+    color: white;
+    background-color: rgb(5, 152, 98);
+}
+#main_menu ul li:hover ul li a{
+    color: #fff;
+}
+
+/*Dropdown Style*/
+
+#main_menu ul ul{
+    position: absolute;
+    background: rgb(5, 152, 98);
+    width: 180px;
+    left:-999999px;
+    top: 33px;
+}
+
+#main_menu ul li:hover ul{
+    left:0;
+}
+
+#main_menu ul li:hover ul ul{
+    left:-999999px;
+}
+#main_menu ul ul ul{
+    left: -999999px;
+    top: 0px;
+    
+}
+#main_menu ul li ul li:hover ul{
+    left:180px;
+}
+
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+
+#main_menu ul ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+#main_menu ul ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+#main_menu ul ul li:hover a{
+    background: #333333;
+    color: #fff;
+}
+
+#main_menu ul ul li:hover ul li a{
+    background: none;
+    color: #fff;
+}
+
+#main_menu ul ul li ul li a:hover{
+    background: #333333;
+    color: #fff;
+}
+
+/* secton 2 */
+
+.section2{
+    background-image: url('sabbir4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-position: center ;
+    height: 990px ;
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 108% 87%, 81% 98%, 27% 94%, -20% 100%, 0% 162%);
+}
+.search {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input {
+    margin-top: 10rem ;
+    display: flex;
+    justify-content: center;
+    width: 34rem;
+  }
+  
+  .section3 {
+
+    background-color: #333333;
+    height: 1000px; /* Adjust height as needed */
+    width: 100%;
+    margin-top: -100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.text-container{
+    margin-top: -154px ;
+}
+
+.card{
+    background-color: rgb(38, 71, 61);
+}
+
+
+
+
+
+
+.offer-card1{
+    margin-top: 32px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+.offer-card1:hover{
+    transform: scale(1.05);
+}
+
+
+/* section4 */
+.section4{
+    background-color: rgb(40, 42, 53);
+    width: 100% ;
+    height: 100vh;
+    margin-top: -180px ;
+}
+
+
+
+/* Define the keyframes for the Y-axis animation */
+@keyframes slideInY {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .text-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-animation.animate h1, 
+  .text-animation.animate p, 
+  .text-animation.animate h6 {
+    opacity: 0;
+    animation: slideInY 1s ease-out forwards;
+  }
+  
+  .text-animation h1 {
+    animation-delay: 0.3s;
+    height: 100%;
+    border: 1px solid rgb(5, 152, 98);
+    padding: 14px;
+    background-color: rgb(56, 59, 75);
+  }
+  
+  .text-animation p {
+    animation-delay: 0.6s;
+    height: 100%;
+    border: 1px solid rgb(5, 152, 98);
+    background-color: rgb(56, 59, 75);
+    padding: 14px;
+  }
+  
+  .text-animation h6 {
+    animation-delay: 0.9s;
+    height: 100%;
+    border: 1px solid rgb(5, 152, 98);
+    background-color: rgb(56, 59, 75);
+    padding: 14px;
+  }
+.search label{
+    margin-top: 320px ;
+}
+.Logins{
+    display: none ;
+}
+.Logins.active{
+    display: block ;
+}
+
+
+
+
+/* responsiv */
+
+@media (max-width:430px) {
+    .search label {
+        margin-top: 230px;
+        margin-left: -336px;
+    }
+    .input{
+        width: 17rem;
+    }
+    .text-area h1{
+        margin-top: 1.8rem ;
+        font-size: 1.25rem;
+        margin-left: -26px ;
+    }
+      .text-area h2{
+        font-size: 15px ;
+      }
+    .nn{
+        margin-left: -10px ;
+    }
+
+    .icons {
+        margin-top: 5rem;
+        margin-left: -12px;
+        padding: 0;
+    }
+    .text-container h1{
+        margin-left: -16px;
+    }
+    .text-container p{
+        font-size: 10px;
+    }
+    .text-container div{
+        margin-left: -8px;
+    }
+    .text-container {
+        margin-top: 58px;
+    }
+    .w-96{
+        width: 0px ;
+    }
+    .carsI {
+        width: 18rem;
+    }
+    .section4{
+        margin-top: -45px ;
+        height: 812px ;
+    }
+   
+    .section3{
+        height: 1600px ;
+    }
+    .fotter{
+        
+    }
+}
+
+
+
+@media (max-width: 430px) and (min-width: 375px) {
+
+    .search label {
+        margin-top: 230px;
+        margin-left: -450px;
+    }
+    .input {
+        width: 17rem;
+    }
+}
